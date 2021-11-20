@@ -1,4 +1,5 @@
-const url = "https://api.punkapi.com/v2/beers";
+const url = "https://api.punkapi.com/´v2/beers";
+
 const overView = document.querySelector(".overview");
 
 async function getBeers() {
@@ -22,8 +23,7 @@ async function getBeers() {
                                   </a>`;
         }
     } catch (error) {
-        console.log("An error occurred");
-        overView.innerHTML = displayError("An error occurred when calling the API");
+        overView.innerHTML = displayError("Lost in a galaxy far far away");
     }
 }
 getBeers();

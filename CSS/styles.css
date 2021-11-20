@@ -54,10 +54,20 @@ img{
     padding: 50px;
     margin: 50px;
 }
-nav{
-    display: inline-flex;
+nav li{
+    display: block;
     margin: 10px;
     padding-left: 10px;
+}
+nav ul{
+    display: inline-flex;
+}
+.error {
+    border: solid red;
+    background-color: salmon;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: fit-content;
 }
 @keyframes spin {
     0% {
