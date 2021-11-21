@@ -52,3 +52,9 @@ function validateEmail(yourEmail) {
     const patternMatches = regEx.test(yourEmail);    
    return patternMatches;
  }
+
+ function submitSucces(){
+     if (validateForm() === true){
+         form.innerHtml += `<p>Succes</p>`
+     }
+ }
