@@ -62,11 +62,34 @@ nav li{
 nav ul{
     display: inline-flex;
 }
-.error {
+.error{
     border: solid red;
     background-color: salmon;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    
+}
+fieldset{
+    background-color: darkseagreen;
+}
+.form-error{
+    display: none;
+    padding: 3px;
+    background-color: salmon;
+    border: solid red;
+    max-width: fit-content;
+}
+label{
+    font-size: 25px;
+    color: darkslategray;
+    margin-right: 20px;
+}
+legend{
+    font-size: 25px;
+    color: darkslategray;
+
+}
+form{
     max-width: fit-content;
 }
 @keyframes spin {

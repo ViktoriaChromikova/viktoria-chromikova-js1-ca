@@ -15,19 +15,34 @@
         </ul>
     </nav>
     <div class="container">
-        <form> 
+        <form id="contact"> 
              <fieldset>
                 <legend>User details</legend>
-                    <h2>Create an account</h2>
-                    <label for="name">Your name</label>
-                    <input type="text" name="name" id="name">
-                    <label for="subject">Subject</label>
-                    <input type="text" name="last name" id="last name">
-                    <label for="adress">Adress</label>
-                    <input type="text" name="Adress" id="adress">
-                     <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email">
-                </fieldset>
+                    <h2>Contact form</h2>
+                    <div>
+                        <label for="name">Your name(required)
+                            <input type="text" name="name" id="name">
+                        </label>
+                        <div class="form-error" id="nameError">Your name is required</div>
+                    </div>
+                    <div>
+                        <label for="subject">Subject
+                            <input type="text" name="subject" id="subject">
+                        </label>
+                        <div class="form-error" id="subjectError">Subject must be at least 10 characters long</div>
+                    </div>
+                    <div>
+                        <label for="adress">Adress
+                            <input type="text" name="adress" id="adress">
+                        </label>
+                        <div class="form-error" id="adressError">Adress must be at least 25characters long</div>
+                    </div>
+                    <div>
+                        <label for="e-mail">E-mail
+                            <input type="text" name="e-mail" id="e-mail">
+                        </label>
+                        <div class="form-error" id="emailError">Your e-mail doesn't have valid structure</div>
+                    </div>
             </fieldset>
             <fieldset>
                 <legend>Sumbit</legend>

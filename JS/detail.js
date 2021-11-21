@@ -6,7 +6,6 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-console.log(id);
 const url = "https://api.punkapi.com/v2/beers/" + id;
 
 
@@ -31,8 +30,7 @@ async function getBeers() {
                                   </div>`;
         }
     } catch (error) {
-        console.log("An error occurred");
-        details.innerHTML = displayError("An error occurred when calling the API");
+        details.innerHTML = displayError("Lost in a galaxy far far away");
     }
 }
 getBeers();
